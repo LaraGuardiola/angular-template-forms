@@ -1,27 +1,15 @@
-# Emailform
+# Angular topics in this project :alien:
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.5.
+* Template forms in angular
+* Two way data binding in angular
+* Conditional validation
+* Handling form submission
+* Comparison between template and reactive forms
 
-## Development server
+## Description of the project :open_book:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+10th project part of the Modern Angular Bootcamp on udemy. Minor project with an small form using template forms, two way data binding and conditional validation. Very similar to  the 9th project.
 
-## Code scaffolding
+## You can test the app here :globe_with_meridians:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+https://emailform-hgzukv3rq-laraguardiola.vercel.app/
