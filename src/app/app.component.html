@@ -1,6 +1,28 @@
 <!-- two way binding using ngModel directive binding it-->
-<form>
-  <input name="email" [(ngModel)]="email"/>
-  <input [value]="">
-  {{ email }}
+<!-- #prefix is setting up a reference of the form group created by angular-->
+<form (ngSubmit)="onSubmit()" #emailForm="ngForm">
+  <input 
+    pattern=".+@.+\..+" 
+    type="email" 
+    required 
+    name="email" 
+    [(ngModel)]="email"
+    #emailControl="ngModel"
+  />
+  <ng-container *ngIf="emailControl.invalid && emailControl.touched">
+    <div *ngIf="emailControl.errors!['required']">
+      Email is required
+    </div>
+    <div *ngIf="emailControl.errors!['pattern']">
+      Email format wrong
+    </div>
+  </ng-container>
+  <button [disabled]="emailForm.invalid">Submit</button>
 </form>
+<hr />
+
+<!-- using different validation properties for the input element -->
+
+<div>Is form valid: {{ emailForm.valid }}</div>
+<div>Form values: {{ emailForm.value | json }}</div>
+<!--<div>Email errors: {{ emailForm.controls['email'].errors | json}}</div>-->

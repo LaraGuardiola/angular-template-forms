@@ -9,9 +9,13 @@ export class AppComponent {
   email!: string
 
   constructor(){
-    setInterval(()=> {
+    /*setInterval(()=> {
       this.email += 'a'
-    },1000)
+    },1000)*/
+  }
+
+  onSubmit(){
+    console.log(this.email)
   }
 }
 
